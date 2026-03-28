@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact | MedTech Service</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <h2>MedTech Service</h2>
+
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+  <div class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html" class="active">Contact</a>
+  </div>
+</nav>
+
+<!-- CONTACT SECTION -->
+<section class="form-section">
+  <h1>Contact / Request Service</h1>
+
+  <form action="https://formspree.io/f/YOUR-FORM-ID" method="POST">
+    <input type="text" name="name" placeholder="Full Name" required>
+    <input type="text" name="company" placeholder="Clinic / Company">
+    <input type="email" name="email" placeholder="Email Address" required>
+    <input type="tel" name="phone" placeholder="Phone Number">
+
+    <textarea name="message" placeholder="Describe your issue..." required></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- CONTACT INFO -->
+  <div class="contact-info">
+    <h3>Contact Information</h3>
+    <p>
+      Email: <a href="mailto:your@email.com">your@email.com</a>
+    </p>
+    <p>
+      Phone: <a href="tel:1234567890">123-456-7890</a>
+    </p>
+    <p>Business: MedTech Service</p>
+    <p><a href="#">LinkedIn Profile</a></p>
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 MedTech Service</p>
+  <p>
+    <a href="mailto:your@email.com">your@email.com</a> |
+    <a href="tel:1234567890">123-456-7890</a>
+  </p>
+  <p><a href="#">LinkedIn</a></p>
+</footer>
+
+<!-- SCRIPT -->
+<script>
+function toggleMenu() {
+  var nav = document.getElementById("navLinks");
+  nav.classList.toggle("active");
+}
+</script>
+
+</body>
+</html>
