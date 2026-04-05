@@ -8,144 +8,178 @@
 </head>
 <body>
 
+<!-- TOP BAR -->
+<div class="top-bar">
+  <a href="mailto:service@wabelmedical.com">✉️ service@wabelmedical.com</a>
+  <a href="tel:14376079355">📞 437-607-9355</a>
+</div>
+
 <!-- NAVBAR -->
 <nav>
   <a href="index.html" class="logo">Wabel Medical<span> Inc.</span></a>
-  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-  <div class="nav-links" id="navLinks">
+  <div class="nav-center">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
+    <a href="services.html">Services</a>
     <a href="contact.html" class="active">Contact</a>
   </div>
+  <div class="nav-right">
+    <a href="tel:14376079355" class="nav-phone">📞 437-607-9355</a>
+    <a href="request.html" class="btn btn-sm">Submit Service Request</a>
+  </div>
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
 </nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="contact.html">Contact</a>
+  <a href="request.html" class="btn">Submit Service Request</a>
+</div>
 
 <!-- PAGE HERO -->
 <div class="page-hero">
   <div class="section-label">Get In Touch</div>
-  <h1>Book a Service Call</h1>
-  <p>Fill out the form below and we'll get back to you within a few hours. For urgent repairs, call us directly.</p>
+  <h1>Contact Us</h1>
+  <p>Get in touch with our team for service requests, questions, or to learn more about our services.</p>
 </div>
 
 <!-- CONTACT SECTION -->
-<section class="contact-section">
+<section style="background: var(--white);">
   <div class="contact-grid">
 
-    <!-- FORM -->
-    <div class="contact-form">
-      <h2>Service Request Form</h2>
-      <form action="https://formspree.io/f/YOUR-FORM-ID" method="POST">
-        <div class="form-row">
-          <input type="text" name="first_name" placeholder="First Name" required>
-          <input type="text" name="last_name" placeholder="Last Name" required>
+    <!-- INFO -->
+    <div class="contact-info-block">
+      <div class="section-label">Contact Information</div>
+      <h2>We're Here to Help</h2>
+      <p>Reach out directly or submit a service request. We respond to all inquiries within 24 hours on business days. Emergency requests are always prioritized.</p>
+
+      <div class="info-card">
+        <div class="info-card-icon">✉️</div>
+        <div>
+          <strong>Email</strong>
+          <a href="mailto:service@wabelmedical.com">service@wabelmedical.com</a>
         </div>
-        <input type="email" name="email" placeholder="Email Address" required>
-        <input type="tel" name="phone" placeholder="Phone Number">
-        <input type="text" name="clinic" placeholder="Clinic / Company Name">
-        <select name="equipment">
-          <option value="" disabled selected>Equipment Type</option>
-          <option>Shockwave Therapy System</option>
-          <option>IFC / Electrotherapy Device</option>
-          <option>Therapeutic Ultrasound</option>
-          <option>Laser Therapy Unit</option>
-          <option>PEMF / EMTT System</option>
-          <option>TENS / NMES Device</option>
-          <option>CPM Machine</option>
-          <option>Electric Treatment Table</option>
-          <option>Biofeedback Device</option>
-          <option>Other</option>
-        </select>
-        <select name="service">
-          <option value="" disabled selected>Service Needed</option>
-          <option>Repair / Diagnostics</option>
-          <option>Annual Calibration</option>
-          <option>Preventive Maintenance</option>
-          <option>Equipment Installation</option>
-          <option>Not Sure — Need Assessment</option>
-        </select>
-        <select name="urgency">
-          <option value="" disabled selected>Urgency Level</option>
-          <option>Low — Scheduled maintenance</option>
-          <option>Medium — Within the week</option>
-          <option>Urgent — ASAP</option>
-        </select>
-        <textarea name="message" placeholder="Describe the issue or what you need..." required></textarea>
-        <button type="submit">Send Service Request →</button>
+      </div>
+
+      <div class="info-card">
+        <div class="info-card-icon">📞</div>
+        <div>
+          <strong>Phone</strong>
+          <a href="tel:14376079355">437-607-9355</a>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <div class="info-card-icon">📍</div>
+        <div>
+          <strong>Service Area</strong>
+          <p>Ontario, including GTA — Toronto, Mississauga, Brampton, Markham, Vaughan, and surrounding regions.</p>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <div class="info-card-icon">🕐</div>
+        <div>
+          <strong>Business Hours</strong>
+          <ul class="hours-list">
+            <li>Monday – Thursday <span>10:00 AM – 9:00 PM</span></li>
+            <li>Friday <span>4:00 PM – 9:00 PM</span></li>
+            <li>Saturday <span>9:00 AM – 9:00 PM</span></li>
+            <li>Sunday <span>9:00 AM – 9:00 PM</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="urgent-note">
+        <strong>⚡ Emergency Requests Prioritized</strong>
+        <p>Equipment failure impacting patient care? Call us directly and we'll do our best to respond as quickly as possible.</p>
+        <a href="tel:14376079355" class="btn">📞 Call Now</a>
+      </div>
+    </div>
+
+    <!-- FORM -->
+    <div class="form-wrapper">
+      <h2>Send Us a Message</h2>
+      <p>Have a question before booking? We're happy to help.</p>
+      <form action="https://formspree.io/f/YOUR-FORM-ID" method="POST">
+        <div class="field-group">
+          <label>Full Name *</label>
+          <input type="text" name="name" placeholder="Your full name" required>
+        </div>
+        <div class="field-group">
+          <label>Email Address *</label>
+          <input type="email" name="email" placeholder="your@email.com" required>
+        </div>
+        <div class="field-group">
+          <label>Phone Number</label>
+          <input type="tel" name="phone" placeholder="Your phone number">
+        </div>
+        <div class="field-group">
+          <label>Clinic / Business Name</label>
+          <input type="text" name="clinic" placeholder="Your clinic or facility name">
+        </div>
+        <div class="field-group">
+          <label>Message *</label>
+          <textarea name="message" placeholder="How can we help you?" required></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message →</button>
+        <p class="form-note">For a full service request, use our <a href="request.html">Request Service form</a>.</p>
       </form>
     </div>
 
-    <!-- CONTACT INFO -->
-    <div class="contact-info">
-      <h2>Contact Information</h2>
-      <p>Reach out directly or use the form. We're happy to answer any questions before you book.</p>
+  </div>
+</section>
 
-      <div class="info-item">
-        <div class="info-icon">📍</div>
-        <div>
-          <strong>Service Area</strong>
-          <span>Greater Toronto Area & Surrounding Regions</span>
-        </div>
-      </div>
-      <div class="info-item">
-        <div class="info-icon">📞</div>
-        <div>
-          <strong>Phone</strong>
-          <span><a href="tel:+16471234567">(647) 123-4567</a></span>
-        </div>
-      </div>
-      <div class="info-item">
-        <div class="info-icon">✉️</div>
-        <div>
-          <strong>Email</strong>
-          <span><a href="mailto:appsdea@gmail.com">appsdea@gmail.com</a></span>
-        </div>
-      </div>
-      <div class="info-item">
-        <div class="info-icon">⏰</div>
-        <div>
-          <strong>Hours</strong>
-          <span>Monday – Friday, 8am – 6pm</span>
-        </div>
-      </div>
-
-      <div class="info-note">
-        <strong>⚡ Urgent Repair?</strong>
-        <p>For emergency equipment failures, call us directly. We prioritize urgent clinic requests.</p>
-        <a href="tel:+16471234567" class="btn">Call Now</a>
-      </div>
-    </div>
-
+<!-- CTA BANNER -->
+<section class="cta-banner">
+  <h2>Ready to book a service?</h2>
+  <p>Fill out our detailed service request form and we'll get back to you within 24 hours.</p>
+  <div class="btn-row">
+    <a href="request.html" class="btn btn-white">Submit Service Request</a>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
   <div class="footer-top">
-    <div class="footer-brand">
-      <a href="index.html" class="logo">Wabel Medical<span> Inc.</span></a>
-      <p>Certified biomedical equipment technician serving the GTA and surrounding regions.</p>
+    <div>
+      <a href="index.html" class="footer-logo">Wabel Medical<span> Inc.</span></a>
+      <p class="footer-tagline">Certified biomedical equipment calibration and maintenance services across Ontario.</p>
     </div>
-    <div class="footer-links">
-      <strong>Quick Links</strong>
+    <div class="footer-col">
+      <strong>Pages</strong>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
+      <a href="services.html">Services</a>
       <a href="contact.html">Contact</a>
+      <a href="request.html">Request Service</a>
     </div>
-    <div class="footer-contact">
+    <div class="footer-col">
+      <strong>Services</strong>
+      <a href="services.html">IFC & TENS Devices</a>
+      <a href="services.html">Ultrasound Devices</a>
+      <a href="services.html">Treatment Tables</a>
+      <a href="services.html">Shockwave Therapy</a>
+    </div>
+    <div class="footer-col">
       <strong>Contact</strong>
-      <a href="mailto:appsdea@gmail.com">appsdea@gmail.com</a>
-      <a href="tel:+16471234567">(647) 123-4567</a>
-      <p>Greater Toronto Area, ON</p>
+      <a href="mailto:service@wabelmedical.com">service@wabelmedical.com</a>
+      <a href="tel:14376079355">437-607-9355</a>
+      <p>Ontario, Canada</p>
     </div>
   </div>
   <div class="footer-bottom">
     <p>© 2026 Wabel Medical Inc. All rights reserved.</p>
+    <a href="contact.html">Contact Us</a>
   </div>
 </footer>
 
 <script>
 function toggleMenu() {
-  var nav = document.getElementById("navLinks");
-  nav.classList.toggle("active");
+  document.getElementById("mobileMenu").classList.toggle("active");
 }
 </script>
 </body>
