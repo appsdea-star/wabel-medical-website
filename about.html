@@ -2,19 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>About | MedTech Service</title>
+  <title>About | Wabel Medical Inc.</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <!-- NAVBAR -->
 <nav>
-  <h2>MedTech Service</h2>
-
+  <a href="index.html" class="logo">Wabel Medical<span> Inc.</span></a>
   <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-
   <div class="nav-links" id="navLinks">
     <a href="index.html">Home</a>
     <a href="about.html" class="active">About</a>
@@ -22,46 +19,119 @@
   </div>
 </nav>
 
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="section-label">Who We Are</div>
+  <h1>About Wabel Medical Inc.</h1>
+  <p>A certified independent biomedical service company based in the Greater Toronto Area.</p>
+</div>
+
 <!-- ABOUT CONTENT -->
-<section class="about">
-  <h1>About Us</h1>
+<section class="about-content">
+  <div class="about-grid">
+    <div class="about-text">
+      <div class="section-label">Our Mission</div>
+      <h2>Keeping Your Clinic Running</h2>
+      <p>Wabel Medical Inc. was founded on a simple principle: clinics deserve fast, reliable, independent equipment service — not long waits in a corporate queue.</p>
+      <p>As a certified biomedical technician, we specialize in the repair, calibration, and maintenance of physiotherapy and rehabilitation equipment. With hands-on experience across a wide range of devices and manufacturers, we bring expert-level service directly to your clinic.</p>
+      <p>Being independent means we're not tied to any single brand or distributor — we service any equipment you own, from any manufacturer, with no restrictions and no bias.</p>
+      <a href="contact.html" class="btn">Get in Touch</a>
+    </div>
+    <div class="about-highlights">
+      <div class="highlight-card">
+        <div class="h-icon">🎯</div>
+        <strong>Shockwave Specialist</strong>
+        <p>Deep expertise in radial, focused, and EMTT shockwave therapy systems.</p>
+      </div>
+      <div class="highlight-card">
+        <div class="h-icon">📜</div>
+        <strong>Certified Technician</strong>
+        <p>Trained biomedical technician with hands-on experience across major brands.</p>
+      </div>
+      <div class="highlight-card">
+        <div class="h-icon">🇨🇦</div>
+        <strong>GTA Based</strong>
+        <p>Proudly serving clinics across the Greater Toronto Area and surrounding regions.</p>
+      </div>
+      <div class="highlight-card">
+        <div class="h-icon">🔧</div>
+        <strong>Any Brand</strong>
+        <p>Independent service — not limited to brands we sell. We fix what you own.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <p>
-    We specialize in the repair, maintenance, and calibration of medical equipment
-    for clinics, laboratories, and healthcare facilities.
-  </p>
+<!-- EQUIPMENT -->
+<section class="equipment">
+  <div class="section-label">Specialties</div>
+  <h2>Equipment We Service</h2>
+  <p class="section-sub">Extensive experience servicing the most popular rehabilitation and physiotherapy equipment used in Canadian clinics.</p>
+  <div class="equip-grid">
+    <div class="equip-item">💥 Shockwave Therapy Systems</div>
+    <div class="equip-item">⚡ IFC & Electrotherapy Devices</div>
+    <div class="equip-item">🔊 Therapeutic Ultrasound</div>
+    <div class="equip-item">💡 Laser Therapy Units</div>
+    <div class="equip-item">🧲 PEMF & EMTT Systems</div>
+    <div class="equip-item">📡 TENS & NMES Devices</div>
+    <div class="equip-item">🔄 CPM Machines</div>
+    <div class="equip-item">🛏️ Electric Treatment Tables</div>
+    <div class="equip-item">📊 Biofeedback Devices</div>
+    <div class="equip-item">🌊 Deep Oscillation Therapy</div>
+  </div>
+</section>
 
-  <p>
-    With hands-on experience across a wide range of devices, our goal is to minimize
-    downtime and ensure your equipment operates safely and efficiently.
-  </p>
-
-  <h3>Equipment We Service</h3>
-  <div class="grid">
-    <div class="card">Patient Monitors</div>
-    <div class="card">Ultrasound Systems</div>
-    <div class="card">X-Ray Equipment</div>
-    <div class="card">Laboratory Devices</div>
+<!-- BRANDS -->
+<section class="brands">
+  <div class="section-label">Brands We Service</div>
+  <h2>We service what others won't</h2>
+  <p class="section-sub">As an independent technician — if you own it, we can service it.</p>
+  <div class="brands-grid">
+    <div class="brand-pill">Storz Medical</div>
+    <div class="brand-pill">Chattanooga</div>
+    <div class="brand-pill">BTL</div>
+    <div class="brand-pill">Gymna</div>
+    <div class="brand-pill">DJO / LiteCure</div>
+    <div class="brand-pill">Multi Radiance</div>
+    <div class="brand-pill">Enraf-Nonius</div>
+    <div class="brand-pill">EMS Swiss</div>
+    <div class="brand-pill">Zimmer MedizinSysteme</div>
+    <div class="brand-pill">Richmar / Roscoe</div>
+    <div class="brand-pill">Intelect</div>
+    <div class="brand-pill">Lojer</div>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
-  <p>© 2026 MedTech Service</p>
-  <p>
-    <a href="mailto:your@email.com">your@email.com</a> |
-    <a href="tel:1234567890">123-456-7890</a>
-  </p>
-  <p><a href="#">LinkedIn</a></p>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">Wabel Medical<span> Inc.</span></a>
+      <p>Certified biomedical equipment technician serving the GTA and surrounding regions.</p>
+    </div>
+    <div class="footer-links">
+      <strong>Quick Links</strong>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-contact">
+      <strong>Contact</strong>
+      <a href="mailto:appsdea@gmail.com">appsdea@gmail.com</a>
+      <a href="tel:+16471234567">(647) 123-4567</a>
+      <p>Greater Toronto Area, ON</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Wabel Medical Inc. All rights reserved.</p>
+  </div>
 </footer>
 
-<!-- SCRIPT -->
 <script>
 function toggleMenu() {
   var nav = document.getElementById("navLinks");
   nav.classList.toggle("active");
 }
 </script>
-
 </body>
 </html>
