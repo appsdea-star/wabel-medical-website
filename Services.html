@@ -2,218 +2,179 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Services | Wabel Medical Inc.</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services — Wabel Medical Inc.</title>
+  <meta name="description" content="Biomedical calibration and maintenance services for IFC, TENS, ultrasound, treatment tables, and shockwave therapy devices across Ontario.">
   <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
 
-<!-- TOP BAR -->
-<div class="top-bar">
-  <a href="mailto:service@wabelmedical.com">✉️ service@wabelmedical.com</a>
-  <a href="tel:14376079355">📞 437-607-9355</a>
-</div>
-
 <!-- NAVBAR -->
-<nav>
-  <a href="index.html" class="logo">Wabel Medical<span> Inc.</span></a>
-  <div class="nav-center">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html" class="active">Services</a>
-    <a href="contact.html">Contact</a>
+<nav class="navbar">
+  <div class="container">
+    <a href="index.html" class="nav-logo">
+      <img src="logo.svg" alt="Wabel Medical Inc." class="nav-logo-img">
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <i data-lucide="menu" style="width:22px;height:22px;"></i>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html" class="active">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="request.html" class="btn-primary">Request Service</a></li>
+    </ul>
   </div>
-  <div class="nav-right">
-    <a href="tel:14376079355" class="nav-phone">📞 437-607-9355</a>
-    <a href="request.html" class="btn btn-sm">Submit Service Request</a>
-  </div>
-  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
 </nav>
 
-<!-- MOBILE MENU -->
-<div class="mobile-menu" id="mobileMenu">
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="services.html">Services</a>
-  <a href="contact.html">Contact</a>
-  <a href="request.html" class="btn">Submit Service Request</a>
-</div>
-
 <!-- PAGE HERO -->
-<div class="page-hero">
-  <div class="section-label">What We Service</div>
-  <h1>Our Services</h1>
-  <p>We provide comprehensive calibration and maintenance services for all major physiotherapy medical devices. Our certified biomedical engineers ensure your equipment operates safely and effectively.</p>
-</div>
-
-<!-- EQUIPMENT WE SERVICE -->
-<section style="background: var(--cream); text-align: center;">
-  <div class="section-label">Equipment We Service</div>
-  <h2>Specialized Device Services</h2>
-  <p class="section-sub">Expert calibration, maintenance, and repair for all major physiotherapy and rehabilitation devices used in Canadian clinics.</p>
-
-  <div class="services-grid">
-
-    <!-- IFC & TENS -->
-    <div class="service-card">
-      <img
-        src="https://physiostore.ca/wp-content/uploads/2025/04/Richmar-Quatro-2.5-DQ8450-Canada.jpg.webp"
-        alt="IFC and TENS Device"
-        class="service-card-img"
-        onerror="this.style.background='var(--sage-mist)'; this.style.height='180px'; this.removeAttribute('src');"
-      >
-      <div class="service-card-body">
-        <h3>IFC & TENS Devices</h3>
-        <p>Comprehensive service for interferential current and transcutaneous electrical nerve stimulation units. Our technicians verify output parameters, electrode integrity, and safety compliance for optimal therapeutic results.</p>
-        <a href="contact.html" class="btn btn-outline">Get in Touch</a>
-      </div>
-    </div>
-
-    <!-- ULTRASOUND -->
-    <div class="service-card">
-      <img
-        src="https://relaxusonline.com/cdn/shop/products/CH-2784_557960fc-e451-427e-8bd5-80655a3a00a6.jpg?v=1650955441"
-        alt="Ultrasound Device"
-        class="service-card-img"
-        onerror="this.style.background='var(--sage-mist)'; this.style.height='180px'; this.removeAttribute('src');"
-      >
-      <div class="service-card-body">
-        <h3>Ultrasound Devices</h3>
-        <p>Expert calibration of low-level laser therapy and cold laser equipment. We measure power output, wavelength accuracy, and beam profile to ensure consistent therapeutic dosing and treatment outcomes.</p>
-        <a href="contact.html" class="btn btn-outline">Get in Touch</a>
-      </div>
-    </div>
-
-    <!-- TREATMENT TABLES -->
-    <div class="service-card">
-      <img
-        src="https://www.performancehealth.ca/media/catalog/product/l/e/leg_and_shoulder_therapy_last_table_pt9060-650.png"
-        alt="Treatment Table"
-        class="service-card-img"
-        onerror="this.style.background='var(--sage-mist)'; this.style.height='180px'; this.removeAttribute('src');"
-      >
-      <div class="service-card-body">
-        <h3>Treatment Tables</h3>
-        <p>Maintenance and safety inspection of electric and hydraulic treatment tables. We check mechanical systems, electrical components, weight capacity, and stability to ensure patient and practitioner safety.</p>
-        <a href="contact.html" class="btn btn-outline">Get in Touch</a>
-      </div>
-    </div>
-
-    <!-- SHOCKWAVE -->
-    <div class="service-card">
-      <img
-        src="https://shockwavecanada.com/wp-content/webp-express/webp-images/uploads/2019/02/MP200_unit_2.jpg.webp"
-        alt="Shockwave Therapy Device"
-        class="service-card-img"
-        onerror="this.style.background='var(--sage-mist)'; this.style.height='180px'; this.removeAttribute('src');"
-      >
-      <div class="service-card-body">
-        <h3>Shockwave Therapy Devices</h3>
-        <p>Specialized calibration for extracorporeal shockwave therapy equipment. Includes pressure verification, energy output testing, and applicator inspection to ensure precise, safe treatment delivery.</p>
-        <a href="contact.html" class="btn btn-outline">Get in Touch</a>
-      </div>
-    </div>
-
+<section class="services-hero">
+  <div class="container">
+    <div class="section-label" style="color: var(--sage-light); justify-content: center; margin-bottom: 0.75rem;">What We Do</div>
+    <h1>Our Services</h1>
+    <p>Comprehensive calibration and maintenance for the physiotherapy modalities your clinic depends on.</p>
   </div>
 </section>
 
-<!-- ADDITIONAL SERVICES -->
-<section style="background: var(--sage-mist); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); text-align: center;">
-  <div class="section-label">Also Available</div>
-  <h2>Additional Equipment We Service</h2>
-  <p class="section-sub">Our expertise extends to all major device categories used in physiotherapy and rehabilitation clinics.</p>
-  <div class="equip-grid">
-    <div class="equip-item">🧲 PEMF & EMTT Systems</div>
-    <div class="equip-item">💡 Laser Therapy Units</div>
-    <div class="equip-item">📡 NMES Devices</div>
-    <div class="equip-item">📊 Biofeedback Devices</div>
-    <div class="equip-item">🌊 Deep Oscillation Therapy</div>
-    <div class="equip-item">🔄 CPM Machines</div>
-    <div class="equip-item">⚡ Electrotherapy Units</div>
-    <div class="equip-item">🩺 Diagnostic Equipment</div>
+<!-- SERVICE CARDS -->
+<section>
+  <div class="container">
+    <div class="section-label">Service Offerings</div>
+    <h2 style="margin-bottom: 2.5rem;">Equipment we service</h2>
+    <div class="service-cards-grid">
+
+      <div class="service-card">
+        <img class="service-card-img" src="https://physiostore.ca/wp-content/uploads/2025/04/Richmar-Quatro-2.5-DQ8450-Canada.jpg.webp" alt="IFC and TENS device" loading="lazy">
+        <div class="service-card-body">
+          <h3>IFC &amp; TENS Devices</h3>
+          <p>Calibration and verification of electrical stimulation devices, including output testing, electrode integrity checks, and safety compliance.</p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img class="service-card-img" src="https://relaxusonline.com/cdn/shop/products/CH-2784_557960fc-e451-427e-8bd5-80655a3a00a6.jpg?v=1650955441" alt="Therapeutic ultrasound device" loading="lazy">
+        <div class="service-card-body">
+          <h3>Therapeutic Ultrasound</h3>
+          <p>Power output measurement, frequency validation, and performance calibration for accurate therapeutic dosing.</p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img class="service-card-img" src="https://www.performancehealth.ca/media/catalog/product/l/e/leg_and_shoulder_therapy_last_table_pt9060-650.png?optimize=low&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700" alt="Treatment table" loading="lazy" style="object-fit: contain; background: #f5f5f5;">
+        <div class="service-card-body">
+          <h3>Treatment Tables</h3>
+          <p>Inspection and maintenance of electric and hydraulic tables including mechanical, electrical, and safety checks.</p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img class="service-card-img" src="https://shockwavecanada.com/wp-content/webp-express/webp-images/uploads/2019/02/MP200_unit_2.jpg.webp" alt="Shockwave therapy device" loading="lazy">
+        <div class="service-card-body">
+          <h3>Shockwave Therapy Devices</h3>
+          <p>Calibration of pressure and energy output, applicator inspection, and performance verification.</p>
+        </div>
+      </div>
+
+    </div>
   </div>
 </section>
 
 <!-- WHAT'S INCLUDED -->
-<section style="background: var(--white);">
-  <div style="text-align: center; margin-bottom: 2.5rem;">
-    <div class="section-label">Our Process</div>
-    <h2>What's Included in Every Service Visit</h2>
-    <p class="section-sub">Every service visit from Wabel Medical Inc. follows a thorough, standardized process to ensure your equipment is fully compliant and performing optimally.</p>
-  </div>
-  <div class="card-grid">
-    <div class="card">
-      <div class="card-icon">🔍</div>
-      <h3>Full Diagnostics</h3>
-      <p>Comprehensive assessment of all device functions, outputs, and components to identify any issues before they become problems.</p>
-    </div>
-    <div class="card">
-      <div class="card-icon">📐</div>
-      <h3>Precision Calibration</h3>
-      <p>Using professional-grade calibration tools to ensure all output parameters meet manufacturer and regulatory specifications.</p>
-    </div>
-    <div class="card">
-      <div class="card-icon">🛠️</div>
-      <h3>Repair & Replacement</h3>
-      <p>On-the-spot repair of identified issues including component replacement, cable repairs, and applicator servicing.</p>
-    </div>
-    <div class="card">
-      <div class="card-icon">📋</div>
-      <h3>Certified Documentation</h3>
-      <p>Full written calibration report provided after every visit — the documentation your clinic needs for compliance and accreditation.</p>
+<section class="includes-section">
+  <div class="container">
+    <div class="section-label">Every Service Visit</div>
+    <h2>What's included</h2>
+    <div class="includes-grid">
+      <div class="include-card">
+        <div class="include-card-icon">
+          <i data-lucide="search" style="width:18px;height:18px;"></i>
+        </div>
+        <h4>Diagnostics</h4>
+        <p>Thorough equipment evaluation and issue detection before any work begins.</p>
+      </div>
+      <div class="include-card">
+        <div class="include-card-icon">
+          <i data-lucide="sliders-horizontal" style="width:18px;height:18px;"></i>
+        </div>
+        <h4>Calibration</h4>
+        <p>Precise adjustment to manufacturer specifications for reliable, accurate output.</p>
+      </div>
+      <div class="include-card">
+        <div class="include-card-icon">
+          <i data-lucide="wrench" style="width:18px;height:18px;"></i>
+        </div>
+        <h4>Repair</h4>
+        <p>Troubleshooting and targeted fixes to restore full equipment functionality.</p>
+      </div>
+      <div class="include-card">
+        <div class="include-card-icon">
+          <i data-lucide="file-check" style="width:18px;height:18px;"></i>
+        </div>
+        <h4>Certification</h4>
+        <p>Compliance documentation with traceable calibration certificates for your records.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- CTA BANNER -->
-<section class="cta-banner">
-  <h2>Don't see your device listed?</h2>
-  <p>We service a wide range of medical and physiotherapy equipment. Get in touch and we'll let you know if we can help.</p>
-  <div class="btn-row">
-    <a href="request.html" class="btn btn-white">Submit Service Request</a>
-    <a href="contact.html" class="btn btn-outline" style="border-color:rgba(255,255,255,0.5); color:#fff !important;">Get in Touch</a>
+<!-- CTA BAND -->
+<section class="cta-band">
+  <div class="container">
+    <div class="section-label" style="color: var(--sage-light); justify-content: center;">Let's Get Started</div>
+    <h2>Have equipment that needs attention?</h2>
+    <p>Reach out and we'll schedule an onsite visit within your preferred timeframe.</p>
+    <a href="contact.html" class="btn-secondary btn-lg" style="border-color: rgba(253,250,247,0.4); color: var(--cream);">Contact Us</a>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-top">
-    <div>
-      <a href="index.html" class="footer-logo">Wabel Medical<span> Inc.</span></a>
-      <p class="footer-tagline">Certified biomedical equipment calibration and maintenance services across Ontario.</p>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html"><img src="logo.svg" alt="Wabel Medical Inc." class="footer-logo-img"></a>
+        <p>Professional calibration and maintenance for physiotherapy equipment across Ontario. Certified technicians, onsite service.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="request.html">Request Service</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <div class="footer-contact-item">
+          <i data-lucide="phone"></i>
+          <a href="tel:4376079355">437-607-9355</a>
+        </div>
+        <div class="footer-contact-item">
+          <i data-lucide="mail"></i>
+          <a href="mailto:service@wabelmedical.com">service@wabelmedical.com</a>
+        </div>
+        <div class="footer-contact-item">
+          <i data-lucide="map-pin"></i>
+          Ontario, Canada (GTA & province-wide)
+        </div>
+      </div>
     </div>
-    <div class="footer-col">
-      <strong>Pages</strong>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
-      <a href="request.html">Request Service</a>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Wabel Medical Inc. All rights reserved.</p>
+      <p>Serving physiotherapy clinics across Ontario</p>
     </div>
-    <div class="footer-col">
-      <strong>Services</strong>
-      <a href="services.html">IFC & TENS Devices</a>
-      <a href="services.html">Ultrasound Devices</a>
-      <a href="services.html">Treatment Tables</a>
-      <a href="services.html">Shockwave Therapy</a>
-    </div>
-    <div class="footer-col">
-      <strong>Contact</strong>
-      <a href="mailto:service@wabelmedical.com">service@wabelmedical.com</a>
-      <a href="tel:14376079355">437-607-9355</a>
-      <p>Ontario, Canada</p>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>© 2026 Wabel Medical Inc. All rights reserved.</p>
-    <a href="contact.html">Contact Us</a>
   </div>
 </footer>
 
 <script>
-function toggleMenu() {
-  document.getElementById("mobileMenu").classList.toggle("active");
-}
+  lucide.createIcons();
+  document.getElementById('navToggle').addEventListener('click', () => {
+    document.getElementById('navLinks').classList.toggle('open');
+  });
 </script>
 </body>
 </html>

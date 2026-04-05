@@ -2,176 +2,245 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>About | Wabel Medical Inc.</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Wabel Medical Inc.</title>
+  <meta name="description" content="Certified biomedical technicians serving physiotherapy clinics across Ontario. Learn about our expertise, credentials, and commitment to compliance.">
   <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
 
-<!-- TOP BAR -->
-<div class="top-bar">
-  <a href="mailto:service@wabelmedical.com">✉️ service@wabelmedical.com</a>
-  <a href="tel:14376079355">📞 437-607-9355</a>
-</div>
-
 <!-- NAVBAR -->
-<nav>
-  <a href="index.html" class="logo">Wabel Medical<span> Inc.</span></a>
-  <div class="nav-center">
-    <a href="index.html">Home</a>
-    <a href="about.html" class="active">About</a>
-    <a href="services.html">Services</a>
-    <a href="contact.html">Contact</a>
+<nav class="navbar">
+  <div class="container">
+    <a href="index.html" class="nav-logo">
+      <img src="logo.svg" alt="Wabel Medical Inc." class="nav-logo-img">
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <i data-lucide="menu" style="width:22px;height:22px;"></i>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="request.html" class="btn-primary">Request Service</a></li>
+    </ul>
   </div>
-  <div class="nav-right">
-    <a href="tel:14376079355" class="nav-phone">📞 437-607-9355</a>
-    <a href="request.html" class="btn btn-sm">Submit Service Request</a>
-  </div>
-  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
 </nav>
 
-<!-- MOBILE MENU -->
-<div class="mobile-menu" id="mobileMenu">
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="services.html">Services</a>
-  <a href="contact.html">Contact</a>
-  <a href="request.html" class="btn">Submit Service Request</a>
-</div>
-
 <!-- PAGE HERO -->
-<div class="page-hero">
-  <div class="section-label">Who We Are</div>
-  <h1>About Wabel Medical Inc.</h1>
-  <p>Professional biomedical technician services for physiotherapy modalities and medical devices across the Greater Toronto Area.</p>
-</div>
-
-<!-- ABOUT SECTION -->
-<section class="about-section">
-
-  <!-- INTRO -->
-  <div class="about-intro">
-    <div class="section-label">Our Expertise</div>
-    <h2>Specialists in Physiotherapy Equipment Service</h2>
-    <p>Wabel Medical Inc. specializes in the calibration and maintenance of physiotherapy medical devices. Our team of certified biomedical technicians brings decades of combined experience in ensuring medical equipment operates at peak performance and safety standards.</p>
-    <br>
-    <p>We understand that reliable, accurately calibrated equipment is essential for effective patient treatment. Our comprehensive service approach combines technical expertise with a deep understanding of clinical workflows, ensuring minimal disruption to your practice.</p>
-    <br>
-    <p>From ultrasound and laser therapy devices to treatment tables and shockwave equipment, we service all major brands and models used in physiotherapy and rehabilitation settings.</p>
+<section class="page-hero">
+  <div class="container">
+    <div class="section-label" style="color: var(--sage-light); justify-content: center; margin-bottom: 0.75rem;">Our Company</div>
+    <h1>About Wabel Medical Inc.</h1>
+    <p>Professional biomedical technician services for physiotherapy modalities and medical devices across the Greater Toronto Area.</p>
   </div>
-
-  <!-- COVERAGE AREA -->
-  <div class="about-block" style="max-width: 860px; margin: 0 auto 3.5rem;">
-    <div class="section-label">Coverage Area</div>
-    <h3>Serving All of Ontario</h3>
-    <p>We offer full coverage across Ontario, including the GTA and surrounding regions. Our mobile service units are equipped with professional-grade calibration equipment and diagnostic tools, allowing us to perform comprehensive service visits at your location.</p>
-    <p>This eliminates the need to transport sensitive medical equipment and reduces downtime. We serve clients across Ontario with fast, reliable on-site service.</p>
-    <p>Whether you're in Toronto, the surrounding GTA, or anywhere across Ontario, we're ready to support your facility's equipment maintenance needs.</p>
-
-    <div class="equip-grid" style="margin-top: 1.5rem;">
-      <div class="equip-item">🏙️ Toronto</div>
-      <div class="equip-item">🏘️ Mississauga</div>
-      <div class="equip-item">🏘️ Brampton</div>
-      <div class="equip-item">🏘️ Markham</div>
-      <div class="equip-item">🏘️ Vaughan</div>
-      <div class="equip-item">🏘️ Richmond Hill</div>
-      <div class="equip-item">🏘️ Oakville</div>
-      <div class="equip-item">🌍 All of Ontario</div>
-    </div>
-  </div>
-
-  <!-- COMMITMENT TO EXCELLENCE -->
-  <div style="max-width: 960px; margin: 0 auto 3.5rem;">
-    <div style="text-align: center; margin-bottom: 2rem;">
-      <div class="section-label">Our Values</div>
-      <h2>Our Commitment to Excellence</h2>
-    </div>
-    <div class="commitment-grid">
-      <div class="commitment-card">
-        <div class="icon">🏆</div>
-        <h4>Certified Expertise</h4>
-        <p>Our technicians hold recognized biomedical certifications and undergo continuous training to stay current with the latest medical device technologies and regulatory requirements.</p>
-      </div>
-      <div class="commitment-card">
-        <div class="icon">⚡</div>
-        <h4>Fast Response</h4>
-        <p>We understand that equipment downtime impacts patient care. We respond to service requests within 24 hours and prioritize emergency situations to minimize disruption to your clinic.</p>
-      </div>
-      <div class="commitment-card">
-        <div class="icon">🛡️</div>
-        <h4>Safety First</h4>
-        <p>Every service visit follows strict safety protocols and complies with Health Canada regulations. We ensure all equipment meets or exceeds safety standards before returning it to clinical use.</p>
-      </div>
-      <div class="commitment-card">
-        <div class="icon">🤝</div>
-        <h4>Client Focused</h4>
-        <p>We build long-term relationships with our clients by being transparent, responsive, and genuinely invested in the success and smooth operation of your practice.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- PROFESSIONAL CREDENTIALS -->
-  <div style="max-width: 860px; margin: 0 auto;">
-    <div class="section-label">Credentials</div>
-    <h3 style="font-size: 1.5rem; color: var(--sage); margin-bottom: 1rem;">Professional Credentials</h3>
-    <div class="credentials-box">
-      <p>Wabel Medical Inc. is operated by certified biomedical engineering technologists with formal training in medical device servicing, calibration, and regulatory compliance. Our technicians are trained to work with equipment from all major manufacturers and are familiar with the specific calibration requirements and service protocols for each device category we support.</p>
-      <br>
-      <p>We maintain current knowledge of Canadian medical device regulations and Health Canada standards. All calibration work is documented and certified, providing your clinic with the compliance records required for regulatory inspections and accreditation processes. Our commitment to professional excellence means your equipment is always in the hands of qualified, accountable professionals.</p>
-    </div>
-  </div>
-
 </section>
 
-<!-- CTA BANNER -->
-<section class="cta-banner">
-  <h2>Ready to work with us?</h2>
-  <p>Submit a service request and our team will get back to you within 24 hours.</p>
-  <div class="btn-row">
-    <a href="request.html" class="btn btn-white">Submit Service Request</a>
-    <a href="contact.html" class="btn btn-outline" style="border-color:rgba(255,255,255,0.5); color:#fff !important;">Contact Us</a>
+<!-- ABOUT INTRO + CREDENTIALS -->
+<section class="about-intro">
+  <div class="container">
+    <div class="about-intro-inner">
+      <div class="about-intro-content">
+        <div class="section-label">Our Expertise</div>
+        <h2>Dedicated biomedical specialists for Ontario clinics</h2>
+        <p style="margin-top: 1rem; margin-bottom: 1.5rem;">We provide dedicated calibration and maintenance services for the physiotherapy and medical equipment your clinic relies on daily. Our technicians bring hands-on expertise across a broad range of modalities, ensuring your devices perform accurately and safely.</p>
+        <ul class="expertise-list">
+          <li>
+            <i data-lucide="check-circle"></i>
+            Calibration and maintenance of physiotherapy equipment
+          </li>
+          <li>
+            <i data-lucide="check-circle"></i>
+            Certified biomedical technicians with extensive experience
+          </li>
+          <li>
+            <i data-lucide="check-circle"></i>
+            Service across ultrasound, laser, shockwave, and treatment tables
+          </li>
+          <li>
+            <i data-lucide="check-circle"></i>
+            Focus on minimizing disruption to clinic operations
+          </li>
+        </ul>
+      </div>
+      <div>
+        <div class="credentials-box">
+          <div class="section-label" style="color: var(--sage-light);">Professional Credentials</div>
+          <h3>Built on standards<br>you can trust</h3>
+          <ul class="credentials-list">
+            <li>
+              <i data-lucide="shield-check"></i>
+              Certified biomedical technicians
+            </li>
+            <li>
+              <i data-lucide="graduation-cap"></i>
+              Continuous training and education
+            </li>
+            <li>
+              <i data-lucide="landmark"></i>
+              Compliance with Health Canada guidelines
+            </li>
+            <li>
+              <i data-lucide="file-check"></i>
+              Traceable calibration certificates aligned with national standards
+            </li>
+            <li>
+              <i data-lucide="star"></i>
+              Industry best practices throughout
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMMITMENT TO EXCELLENCE -->
+<section class="commitment-section">
+  <div class="container">
+    <div class="section-label">Commitment to Excellence</div>
+    <h2>How we show up for your clinic</h2>
+    <div class="commitment-grid">
+      <div class="commitment-card">
+        <div class="commitment-card-icon">
+          <i data-lucide="award" style="width:20px;height:20px;"></i>
+        </div>
+        <h4>Certified Expertise</h4>
+        <p>Ongoing professional certification ensures our technicians remain current with evolving standards and technologies.</p>
+      </div>
+      <div class="commitment-card">
+        <div class="commitment-card-icon">
+          <i data-lucide="truck" style="width:20px;height:20px;"></i>
+        </div>
+        <h4>Fast Response</h4>
+        <p>Mobile service units across the GTA mean we arrive at your clinic promptly, with equipment and tools ready.</p>
+      </div>
+      <div class="commitment-card">
+        <div class="commitment-card-icon">
+          <i data-lucide="shield" style="width:20px;height:20px;"></i>
+        </div>
+        <h4>Safety First</h4>
+        <p>Full safety testing is included on every visit — never an afterthought, always a standard part of our process.</p>
+      </div>
+      <div class="commitment-card">
+        <div class="commitment-card-icon">
+          <i data-lucide="users" style="width:20px;height:20px;"></i>
+        </div>
+        <h4>Client Focused</h4>
+        <p>Flexible scheduling and complete service documentation so your clinic stays organized and inspection-ready.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COVERAGE AREA -->
+<section class="coverage-section">
+  <div class="container">
+    <div class="coverage-inner">
+      <div>
+        <div class="section-label">Coverage Area</div>
+        <h2>Serving clinics<br>across Ontario</h2>
+        <p style="margin-top: 1rem; margin-bottom: 1.5rem;">We provide Ontario-wide service coverage with a particular focus on the Greater Toronto Area. Our mobile onsite service means you never need to transport your equipment.</p>
+        <div class="coverage-tags">
+          <span class="coverage-tag">Toronto</span>
+          <span class="coverage-tag">Mississauga</span>
+          <span class="coverage-tag">Brampton</span>
+          <span class="coverage-tag">Markham</span>
+          <span class="coverage-tag">Vaughan</span>
+          <span class="coverage-tag">Ontario-wide</span>
+        </div>
+      </div>
+      <div class="coverage-features">
+        <div class="coverage-feature">
+          <div class="coverage-feature-icon">
+            <i data-lucide="map" style="width:18px;height:18px;"></i>
+          </div>
+          <div class="coverage-feature-text">
+            <h4>Ontario-wide service</h4>
+            <p>Full provincial coverage, not just the GTA — we travel to where your clinic is located.</p>
+          </div>
+        </div>
+        <div class="coverage-feature">
+          <div class="coverage-feature-icon">
+            <i data-lucide="truck" style="width:18px;height:18px;"></i>
+          </div>
+          <div class="coverage-feature-text">
+            <h4>Mobile onsite units</h4>
+            <p>Our technicians come fully equipped. No need to ship or transport your devices.</p>
+          </div>
+        </div>
+        <div class="coverage-feature">
+          <div class="coverage-feature-icon">
+            <i data-lucide="clock" style="width:18px;height:18px;"></i>
+          </div>
+          <div class="coverage-feature-text">
+            <h4>Flexible scheduling</h4>
+            <p>Morning, evening, and weekend appointments available to fit your clinic's hours.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="cta-band">
+  <div class="container">
+    <div class="section-label" style="color: var(--sage-light); justify-content: center;">Work With Us</div>
+    <h2>Ready to work with us?</h2>
+    <p>Reach out and let's discuss what your clinic needs.</p>
+    <a href="contact.html" class="btn-secondary btn-lg" style="border-color: rgba(253,250,247,0.4); color: var(--cream);">Contact Us</a>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-top">
-    <div>
-      <a href="index.html" class="footer-logo">Wabel Medical<span> Inc.</span></a>
-      <p class="footer-tagline">Certified biomedical equipment calibration and maintenance services across Ontario.</p>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html"><img src="logo.svg" alt="Wabel Medical Inc." class="footer-logo-img"></a>
+        <p>Professional calibration and maintenance for physiotherapy equipment across Ontario. Certified technicians, onsite service.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="request.html">Request Service</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <div class="footer-contact-item">
+          <i data-lucide="phone"></i>
+          <a href="tel:4376079355">437-607-9355</a>
+        </div>
+        <div class="footer-contact-item">
+          <i data-lucide="mail"></i>
+          <a href="mailto:service@wabelmedical.com">service@wabelmedical.com</a>
+        </div>
+        <div class="footer-contact-item">
+          <i data-lucide="map-pin"></i>
+          Ontario, Canada (GTA & province-wide)
+        </div>
+      </div>
     </div>
-    <div class="footer-col">
-      <strong>Pages</strong>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
-      <a href="request.html">Request Service</a>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Wabel Medical Inc. All rights reserved.</p>
+      <p>Serving physiotherapy clinics across Ontario</p>
     </div>
-    <div class="footer-col">
-      <strong>Services</strong>
-      <a href="services.html">IFC & TENS Devices</a>
-      <a href="services.html">Ultrasound Devices</a>
-      <a href="services.html">Treatment Tables</a>
-      <a href="services.html">Shockwave Therapy</a>
-    </div>
-    <div class="footer-col">
-      <strong>Contact</strong>
-      <a href="mailto:service@wabelmedical.com">service@wabelmedical.com</a>
-      <a href="tel:14376079355">437-607-9355</a>
-      <p>Ontario, Canada</p>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>© 2026 Wabel Medical Inc. All rights reserved.</p>
-    <a href="contact.html">Contact Us</a>
   </div>
 </footer>
 
 <script>
-function toggleMenu() {
-  document.getElementById("mobileMenu").classList.toggle("active");
-}
+  lucide.createIcons();
+  document.getElementById('navToggle').addEventListener('click', () => {
+    document.getElementById('navLinks').classList.toggle('open');
+  });
 </script>
 </body>
 </html>

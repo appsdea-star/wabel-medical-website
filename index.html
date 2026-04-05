@@ -2,217 +2,168 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Wabel Medical Inc. | Certified Medical Equipment Calibration & Repair</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Expert calibration and maintenance services for physiotherapy and medical equipment across all of Ontario, including the GTA.">
+  <title>Wabel Medical Inc. — Biomedical Equipment Calibration & Maintenance</title>
+  <meta name="description" content="Expert calibration and maintenance services for physiotherapy and medical equipment across Ontario, including the GTA.">
   <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
 
-<!-- TOP BAR -->
-<div class="top-bar">
-  <a href="mailto:service@wabelmedical.com">✉️ service@wabelmedical.com</a>
-  <a href="tel:14376079355">📞 437-607-9355</a>
-</div>
-
 <!-- NAVBAR -->
-<nav>
-  <a href="index.html" class="logo">Wabel Medical<span> Inc.</span></a>
-  <div class="nav-center">
-    <a href="index.html" class="active">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="contact.html">Contact</a>
+<nav class="navbar">
+  <div class="container">
+    <a href="index.html" class="nav-logo">
+      <img src="logo.svg" alt="Wabel Medical Inc." class="nav-logo-img">
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <i data-lucide="menu" style="width:22px;height:22px;"></i>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="request.html" class="btn-primary">Request Service</a></li>
+    </ul>
   </div>
-  <div class="nav-right">
-    <a href="tel:14376079355" class="nav-phone">📞 437-607-9355</a>
-    <a href="request.html" class="btn btn-sm">Submit Service Request</a>
-  </div>
-  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
 </nav>
 
-<!-- MOBILE MENU -->
-<div class="mobile-menu" id="mobileMenu">
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="services.html">Services</a>
-  <a href="contact.html">Contact</a>
-  <a href="request.html" class="btn">Submit Service Request</a>
-</div>
-
 <!-- HERO -->
-<header class="hero">
-  <div class="hero-inner">
-    <div class="hero-badge">🇨🇦 Serving All of Ontario, Including the GTA</div>
-    <h1>Professional Medical Device<br><em>Calibration & Maintenance</em></h1>
-    <p>Expert calibration and maintenance services for physiotherapy and medical equipment across all of Ontario, including the GTA. Delivering precision, reliability, and compliance to keep your equipment performing at its best.</p>
-    <div class="hero-btns">
-      <a href="request.html" class="btn">Request Service</a>
-      <a href="services.html" class="btn btn-outline">View Our Services</a>
+<section class="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-eyebrow">Ontario's Biomedical Specialists</div>
+      <h1><em>Professional medical device</em> calibration and maintenance</h1>
+      <p>Expert calibration and maintenance services for physiotherapy and medical equipment across Ontario, including the GTA. Delivering precision, reliability, and compliance.</p>
+      <div class="hero-actions">
+        <a href="request.html" class="btn-primary btn-lg">
+          <i data-lucide="calendar-check" style="width:16px;height:16px;"></i>
+          Request Service
+        </a>
+        <a href="services.html" class="btn-secondary btn-lg">View Services</a>
+      </div>
     </div>
   </div>
-</header>
+</section>
 
-<!-- STATS BAR -->
-<div class="stats-bar">
-  <div class="stat"><strong>All Ontario</strong><span>Province-wide coverage</span></div>
-  <div class="stat"><strong>Any Brand</strong><span>Independent & unbiased</span></div>
-  <div class="stat"><strong>On-Site</strong><span>We come to your clinic</span></div>
-  <div class="stat"><strong>24hr Response</strong><span>Fast turnaround</span></div>
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="container">
+    <div class="trust-bar-inner">
+      <div class="trust-item">
+        <i data-lucide="zap"></i>
+        Fast response times
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-item">
+        <i data-lucide="shield-check"></i>
+        Certified technicians
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-item">
+        <i data-lucide="map-pin"></i>
+        Ontario-wide coverage
+      </div>
+    </div>
+  </div>
 </div>
 
-<!-- SERVICES OVERVIEW -->
-<section style="background: var(--cream); text-align: center;">
-  <div class="section-label">What We Do</div>
-  <h2>How We Help Your Clinic</h2>
-  <p class="section-sub">We handle the technical side so you never have to worry. From same-day repairs to scheduled annual calibrations, we've got you covered across Ontario.</p>
-  <div class="card-grid">
-    <div class="card">
-      <div class="card-icon">📐</div>
-      <h3>Calibration & Certification</h3>
-      <p>Legally required yearly device calibrations with full certified documentation to keep your clinic compliant and audit-ready.</p>
-    </div>
-    <div class="card">
-      <div class="card-icon">🛠️</div>
-      <h3>Diagnostics & Repair</h3>
-      <p>Full diagnosis and component-level repair for malfunctioning devices. We identify the root cause and fix it right the first time.</p>
-    </div>
-    <div class="card">
-      <div class="card-icon">🔍</div>
-      <h3>Preventive Maintenance</h3>
-      <p>Scheduled maintenance programs to catch issues early, extend equipment lifespan, and avoid costly emergency repairs.</p>
-    </div>
-    <div class="card">
-      <div class="card-icon">🏥</div>
-      <h3>Equipment Installation</h3>
-      <p>Professional setup of new and relocated equipment. We install, configure, verify settings, and train your staff.</p>
-    </div>
-  </div>
-</section>
-
-<!-- EQUIPMENT -->
-<section style="background: var(--sage-mist); text-align: center; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
-  <div class="section-label">Specialties</div>
-  <h2>Equipment We Service</h2>
-  <p class="section-sub">Comprehensive service for all major physiotherapy and rehabilitation devices used in Canadian clinics.</p>
-  <div class="equip-grid">
-    <div class="equip-item">💥 Shockwave Therapy Systems</div>
-    <div class="equip-item">⚡ IFC & TENS Devices</div>
-    <div class="equip-item">🔊 Therapeutic Ultrasound</div>
-    <div class="equip-item">💡 Laser Therapy Units</div>
-    <div class="equip-item">🧲 PEMF & EMTT Systems</div>
-    <div class="equip-item">🛏️ Treatment Tables</div>
-    <div class="equip-item">🔄 CPM Machines</div>
-    <div class="equip-item">📊 Biofeedback Devices</div>
-    <div class="equip-item">🌊 Deep Oscillation Therapy</div>
-    <div class="equip-item">📡 NMES Devices</div>
-  </div>
-  <br>
-  <a href="services.html" class="btn btn-outline" style="margin-top:1rem;">View All Services</a>
-</section>
-
-<!-- WHY US -->
-<section style="background: var(--white);">
-  <div style="text-align:center; margin-bottom: 2.5rem;">
-    <div class="section-label">Why Wabel Medical Inc.</div>
-    <h2>Service That Feels Different</h2>
-    <p class="section-sub">We treat every clinic like a long-term partner — with care, transparency, and genuine commitment to keeping your equipment in top shape.</p>
-  </div>
-  <div class="why-grid">
-    <div class="why-item">
-      <span>🔧</span>
+<!-- WHY CHOOSE US -->
+<section class="why-section">
+  <div class="container">
+    <div class="why-header">
       <div>
-        <strong>Any Brand Serviced</strong>
-        <p>Unlike dealer-tied shops, we service equipment from any manufacturer with no restrictions.</p>
+        <div class="section-label">Why Choose Us</div>
+        <h2>Built for clinics that<br>can't afford downtime</h2>
       </div>
+      <a href="request.html" class="btn-primary">Request Service</a>
     </div>
-    <div class="why-item">
-      <span>🚐</span>
-      <div>
-        <strong>On-Site at Your Clinic</strong>
-        <p>No shipping required. We come directly to your location anywhere in Ontario.</p>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-card-icon">
+          <i data-lucide="badge-check" style="width:20px;height:20px;"></i>
+        </div>
+        <h3>Compliance</h3>
+        <p>All calibrations meet regulatory and safety standards, with traceable documentation to satisfy inspection requirements.</p>
       </div>
-    </div>
-    <div class="why-item">
-      <span>⚡</span>
-      <div>
-        <strong>Fast Turnaround</strong>
-        <p>24-hour response time on business days. Emergency requests are always prioritized.</p>
+      <div class="why-card">
+        <div class="why-card-icon">
+          <i data-lucide="clock" style="width:20px;height:20px;"></i>
+        </div>
+        <h3>Speed</h3>
+        <p>Fast onsite response across Ontario. We come to your clinic so your equipment is back in service with minimal disruption.</p>
       </div>
-    </div>
-    <div class="why-item">
-      <span>📜</span>
-      <div>
-        <strong>Legally Compliant</strong>
-        <p>Certified calibration reports required by Canadian law for annual device inspections.</p>
-      </div>
-    </div>
-    <div class="why-item">
-      <span>🎯</span>
-      <div>
-        <strong>Shockwave Specialists</strong>
-        <p>Deep expertise in radial, focused, and EMTT shockwave therapy systems.</p>
-      </div>
-    </div>
-    <div class="why-item">
-      <span>🤝</span>
-      <div>
-        <strong>Direct Communication</strong>
-        <p>You speak directly with your certified technician — no call centres or ticket systems.</p>
+      <div class="why-card">
+        <div class="why-card-icon">
+          <i data-lucide="microscope" style="width:20px;height:20px;"></i>
+        </div>
+        <h3>Expertise</h3>
+        <p>Certified biomedical technicians with deep experience across the full spectrum of physiotherapy modalities.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CTA BANNER -->
-<section class="cta-banner">
-  <h2>Ready to book a service call?</h2>
-  <p>Whether it's a routine calibration or an urgent repair, we're here to help your clinic stay confident, compliant, and running smoothly across Ontario.</p>
-  <div class="btn-row">
-    <a href="request.html" class="btn btn-white">Submit Service Request</a>
-    <a href="tel:14376079355" class="btn btn-outline" style="border-color:rgba(255,255,255,0.5); color:#fff !important;">📞 437-607-9355</a>
+<!-- CTA BAND -->
+<section class="cta-band">
+  <div class="container">
+    <div class="section-label" style="color: var(--sage-light); justify-content: center;">Get Started</div>
+    <h2>Ready to schedule a service?</h2>
+    <p>Submit a service request and our team will reach out within 24 hours to confirm your onsite appointment.</p>
+    <a href="request.html" class="btn-primary btn-lg">
+      <i data-lucide="calendar-check" style="width:16px;height:16px;"></i>
+      Request Service
+    </a>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-top">
-    <div>
-      <a href="index.html" class="footer-logo">Wabel Medical<span> Inc.</span></a>
-      <p class="footer-tagline">Certified biomedical equipment calibration and maintenance services across Ontario.</p>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html"><img src="logo.svg" alt="Wabel Medical Inc." class="footer-logo-img"></a>
+        <p>Professional calibration and maintenance for physiotherapy equipment across Ontario. Certified technicians, onsite service.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="request.html">Request Service</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <div class="footer-contact-item">
+          <i data-lucide="phone"></i>
+          <a href="tel:4376079355">437-607-9355</a>
+        </div>
+        <div class="footer-contact-item">
+          <i data-lucide="mail"></i>
+          <a href="mailto:service@wabelmedical.com">service@wabelmedical.com</a>
+        </div>
+        <div class="footer-contact-item">
+          <i data-lucide="map-pin"></i>
+          Ontario, Canada (GTA & province-wide)
+        </div>
+      </div>
     </div>
-    <div class="footer-col">
-      <strong>Pages</strong>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
-      <a href="request.html">Request Service</a>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Wabel Medical Inc. All rights reserved.</p>
+      <p>Serving physiotherapy clinics across Ontario</p>
     </div>
-    <div class="footer-col">
-      <strong>Services</strong>
-      <a href="services.html">IFC & TENS Devices</a>
-      <a href="services.html">Ultrasound Devices</a>
-      <a href="services.html">Treatment Tables</a>
-      <a href="services.html">Shockwave Therapy</a>
-    </div>
-    <div class="footer-col">
-      <strong>Contact</strong>
-      <a href="mailto:service@wabelmedical.com">service@wabelmedical.com</a>
-      <a href="tel:14376079355">437-607-9355</a>
-      <p>Ontario, Canada</p>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>© 2026 Wabel Medical Inc. All rights reserved.</p>
-    <a href="contact.html">Contact Us</a>
   </div>
 </footer>
 
 <script>
-function toggleMenu() {
-  document.getElementById("mobileMenu").classList.toggle("active");
-}
+  lucide.createIcons();
+  document.getElementById('navToggle').addEventListener('click', () => {
+    document.getElementById('navLinks').classList.toggle('open');
+  });
 </script>
 </body>
 </html>

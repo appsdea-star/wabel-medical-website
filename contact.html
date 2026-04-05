@@ -2,185 +2,169 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Contact | Wabel Medical Inc.</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Wabel Medical Inc.</title>
+  <meta name="description" content="Contact Wabel Medical Inc. for biomedical equipment calibration and maintenance services across Ontario.">
   <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
 
-<!-- TOP BAR -->
-<div class="top-bar">
-  <a href="mailto:service@wabelmedical.com">✉️ service@wabelmedical.com</a>
-  <a href="tel:14376079355">📞 437-607-9355</a>
-</div>
-
 <!-- NAVBAR -->
-<nav>
-  <a href="index.html" class="logo">Wabel Medical<span> Inc.</span></a>
-  <div class="nav-center">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="contact.html" class="active">Contact</a>
+<nav class="navbar">
+  <div class="container">
+    <a href="index.html" class="nav-logo">
+      <img src="logo.svg" alt="Wabel Medical Inc." class="nav-logo-img">
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <i data-lucide="menu" style="width:22px;height:22px;"></i>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="request.html" class="btn-primary">Request Service</a></li>
+    </ul>
   </div>
-  <div class="nav-right">
-    <a href="tel:14376079355" class="nav-phone">📞 437-607-9355</a>
-    <a href="request.html" class="btn btn-sm">Submit Service Request</a>
-  </div>
-  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
 </nav>
 
-<!-- MOBILE MENU -->
-<div class="mobile-menu" id="mobileMenu">
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="services.html">Services</a>
-  <a href="contact.html">Contact</a>
-  <a href="request.html" class="btn">Submit Service Request</a>
-</div>
-
 <!-- PAGE HERO -->
-<div class="page-hero">
-  <div class="section-label">Get In Touch</div>
-  <h1>Contact Us</h1>
-  <p>Get in touch with our team for service requests, questions, or to learn more about our services.</p>
-</div>
-
-<!-- CONTACT SECTION -->
-<section style="background: var(--white);">
-  <div class="contact-grid">
-
-    <!-- INFO -->
-    <div class="contact-info-block">
-      <div class="section-label">Contact Information</div>
-      <h2>We're Here to Help</h2>
-      <p>Reach out directly or submit a service request. We respond to all inquiries within 24 hours on business days. Emergency requests are always prioritized.</p>
-
-      <div class="info-card">
-        <div class="info-card-icon">✉️</div>
-        <div>
-          <strong>Email</strong>
-          <a href="mailto:service@wabelmedical.com">service@wabelmedical.com</a>
-        </div>
-      </div>
-
-      <div class="info-card">
-        <div class="info-card-icon">📞</div>
-        <div>
-          <strong>Phone</strong>
-          <a href="tel:14376079355">437-607-9355</a>
-        </div>
-      </div>
-
-      <div class="info-card">
-        <div class="info-card-icon">📍</div>
-        <div>
-          <strong>Service Area</strong>
-          <p>Ontario, including GTA — Toronto, Mississauga, Brampton, Markham, Vaughan, and surrounding regions.</p>
-        </div>
-      </div>
-
-      <div class="info-card">
-        <div class="info-card-icon">🕐</div>
-        <div>
-          <strong>Business Hours</strong>
-          <ul class="hours-list">
-            <li>Monday – Thursday <span>10:00 AM – 9:00 PM</span></li>
-            <li>Friday <span>4:00 PM – 9:00 PM</span></li>
-            <li>Saturday <span>9:00 AM – 9:00 PM</span></li>
-            <li>Sunday <span>9:00 AM – 9:00 PM</span></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="urgent-note">
-        <strong>⚡ Emergency Requests Prioritized</strong>
-        <p>Equipment failure impacting patient care? Call us directly and we'll do our best to respond as quickly as possible.</p>
-        <a href="tel:14376079355" class="btn">📞 Call Now</a>
-      </div>
-    </div>
-
-    <!-- FORM -->
-    <div class="form-wrapper">
-      <h2>Send Us a Message</h2>
-      <p>Have a question before booking? We're happy to help.</p>
-      <form action="https://formspree.io/f/YOUR-FORM-ID" method="POST">
-        <div class="field-group">
-          <label>Full Name *</label>
-          <input type="text" name="name" placeholder="Your full name" required>
-        </div>
-        <div class="field-group">
-          <label>Email Address *</label>
-          <input type="email" name="email" placeholder="your@email.com" required>
-        </div>
-        <div class="field-group">
-          <label>Phone Number</label>
-          <input type="tel" name="phone" placeholder="Your phone number">
-        </div>
-        <div class="field-group">
-          <label>Clinic / Business Name</label>
-          <input type="text" name="clinic" placeholder="Your clinic or facility name">
-        </div>
-        <div class="field-group">
-          <label>Message *</label>
-          <textarea name="message" placeholder="How can we help you?" required></textarea>
-        </div>
-        <button type="submit" class="btn">Send Message →</button>
-        <p class="form-note">For a full service request, use our <a href="request.html">Request Service form</a>.</p>
-      </form>
-    </div>
-
+<section class="page-hero">
+  <div class="container">
+    <div class="section-label" style="color: var(--sage-light); justify-content: center; margin-bottom: 0.75rem;">Reach Out</div>
+    <h1>Contact Us</h1>
+    <p>Get in touch with our team for service requests or inquiries.</p>
   </div>
 </section>
 
-<!-- CTA BANNER -->
-<section class="cta-banner">
-  <h2>Ready to book a service?</h2>
-  <p>Fill out our detailed service request form and we'll get back to you within 24 hours.</p>
-  <div class="btn-row">
-    <a href="request.html" class="btn btn-white">Submit Service Request</a>
+<!-- CONTACT SECTION -->
+<section class="contact-section">
+  <div class="container">
+    <div class="contact-grid">
+      <div>
+        <div class="section-label">Get in Touch</div>
+        <h2>We're here to help</h2>
+        <p style="margin-top: 0.75rem; margin-bottom: 2rem;">Whether you need to schedule a calibration visit, ask about a specific device, or request an emergency service call, our team is ready to respond.</p>
+        <div class="contact-cards">
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <i data-lucide="phone" style="width:18px;height:18px;"></i>
+            </div>
+            <div class="contact-card-body">
+              <h4>Phone</h4>
+              <p><a href="tel:4376079355">437-607-9355</a></p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <i data-lucide="mail" style="width:18px;height:18px;"></i>
+            </div>
+            <div class="contact-card-body">
+              <h4>Email</h4>
+              <p><a href="mailto:service@wabelmedical.com">service@wabelmedical.com</a></p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <i data-lucide="map-pin" style="width:18px;height:18px;"></i>
+            </div>
+            <div class="contact-card-body">
+              <h4>Service Area</h4>
+              <p>Ontario, including Greater Toronto Area</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="hours-box">
+          <div class="section-label" style="color: var(--sage-light);">Availability</div>
+          <h3>Business Hours</h3>
+          <table class="hours-table">
+            <tbody>
+              <tr>
+                <td>Monday – Thursday</td>
+                <td>10:00 am – 9:00 pm</td>
+              </tr>
+              <tr>
+                <td>Friday</td>
+                <td>4:00 pm – 9:00 pm</td>
+              </tr>
+              <tr>
+                <td>Saturday – Sunday</td>
+                <td>9:00 am – 9:00 pm</td>
+              </tr>
+              <tr>
+                <td>Emergency</td>
+                <td><span class="hours-emergency"><i data-lucide="zap" style="width:12px;height:12px;"></i> Prioritized</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA SECTION -->
+<section class="contact-cta-section">
+  <div class="container">
+    <div class="section-label" style="justify-content: center;">Online Form</div>
+    <h2>Ready to schedule a service?</h2>
+    <p>Submit a service request and we'll respond within 24 hours.</p>
+    <a href="request.html" class="btn-primary btn-lg">
+      <i data-lucide="file-text" style="width:16px;height:16px;"></i>
+      Submit Service Request
+    </a>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-top">
-    <div>
-      <a href="index.html" class="footer-logo">Wabel Medical<span> Inc.</span></a>
-      <p class="footer-tagline">Certified biomedical equipment calibration and maintenance services across Ontario.</p>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html"><img src="logo.svg" alt="Wabel Medical Inc." class="footer-logo-img"></a>
+        <p>Professional calibration and maintenance for physiotherapy equipment across Ontario. Certified technicians, onsite service.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="request.html">Request Service</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <div class="footer-contact-item">
+          <i data-lucide="phone"></i>
+          <a href="tel:4376079355">437-607-9355</a>
+        </div>
+        <div class="footer-contact-item">
+          <i data-lucide="mail"></i>
+          <a href="mailto:service@wabelmedical.com">service@wabelmedical.com</a>
+        </div>
+        <div class="footer-contact-item">
+          <i data-lucide="map-pin"></i>
+          Ontario, Canada (GTA & province-wide)
+        </div>
+      </div>
     </div>
-    <div class="footer-col">
-      <strong>Pages</strong>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
-      <a href="request.html">Request Service</a>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Wabel Medical Inc. All rights reserved.</p>
+      <p>Serving physiotherapy clinics across Ontario</p>
     </div>
-    <div class="footer-col">
-      <strong>Services</strong>
-      <a href="services.html">IFC & TENS Devices</a>
-      <a href="services.html">Ultrasound Devices</a>
-      <a href="services.html">Treatment Tables</a>
-      <a href="services.html">Shockwave Therapy</a>
-    </div>
-    <div class="footer-col">
-      <strong>Contact</strong>
-      <a href="mailto:service@wabelmedical.com">service@wabelmedical.com</a>
-      <a href="tel:14376079355">437-607-9355</a>
-      <p>Ontario, Canada</p>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>© 2026 Wabel Medical Inc. All rights reserved.</p>
-    <a href="contact.html">Contact Us</a>
   </div>
 </footer>
 
 <script>
-function toggleMenu() {
-  document.getElementById("mobileMenu").classList.toggle("active");
-}
+  lucide.createIcons();
+  document.getElementById('navToggle').addEventListener('click', () => {
+    document.getElementById('navLinks').classList.toggle('open');
+  });
 </script>
 </body>
 </html>
